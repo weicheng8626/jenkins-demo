@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        K8S_CONFIG = credentials('jenkins-k8s-config')
+    }
     stages {
         stage('Install Kubectl') {
             steps {

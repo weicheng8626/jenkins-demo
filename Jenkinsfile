@@ -1,15 +1,9 @@
 pipeline {
-    agent any
-
-    environment {
-        DISABLE_AUTH = 'true'
-        DB_ENGINE    = 'sqlite'
-    }
-
+    agent { docker 'maven:3.3.3' }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                sh 'printenv'
+                sh 'mvn --version'
             }
         }
     }

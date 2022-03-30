@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        K8S_CONFIG = credentials('aws_iam_credentials')
+        AWS_IAM_CREDENTIALS = credentials('aws_iam_credentials')
     }
     stages {
         stage('Build Aws Env') {

@@ -1,4 +1,4 @@
-node("slave") {
+node("maven") {
     stage('Get a Maven Project') {
         container('jnlp') {
             stage('Maven version') {

@@ -1,4 +1,4 @@
-node("kubectl") {
+node("slave") {
     stage('Get a Maven Project') {
         container('jnlp') {
             stage('Maven version') {

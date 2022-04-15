@@ -3,6 +3,7 @@ node("jenkins-slave") {
         container('jnlp') {
             stage('Maven version') {
                 sh 'kubectl get ns'
+                sh 'aws configure'
             }
         }
     }

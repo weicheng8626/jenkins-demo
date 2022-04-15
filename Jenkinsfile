@@ -1,4 +1,4 @@
-node("maven") {
+node("jenkins-salve") {
     stage('Get a Maven Project') {
         container('jnlp') {
             stage('Maven version') {
